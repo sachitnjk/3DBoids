@@ -5,14 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Flock/Behaviour/Go to Target")]
 public class GoToTarget : FlockBehaviour
 {
-	public GameObject target;
 	public float desiredDistance = 5f;
 
 	private float distanceToTarget;
 
 	private Vector3 moveDirection;
 	private Vector3 desiredPosition;
-	public override Vector3 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+	public override Vector3 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock, GameObject target)
 	{
 		if(target == null)
 		{

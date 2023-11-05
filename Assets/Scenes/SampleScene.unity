@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentPrefab: {fileID: 828508533113688239, guid: d7658caaf1e19ff4a867d56f93d88d3d, type: 3}
   behaviour: {fileID: 11400000, guid: cbfa3eeb8b971bf45a901b43c30f4761, type: 2}
+  target: {fileID: 1617709603}
   startingCount: 250
   driveFactor: 15
   maxSpeed: 5
@@ -440,3 +441,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1617709603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5934562349317179169, guid: b8b13b32d7638e04ebb985c046565f61, type: 3}
+  m_PrefabInstance: {fileID: 1039796297}
+  m_PrefabAsset: {fileID: 0}

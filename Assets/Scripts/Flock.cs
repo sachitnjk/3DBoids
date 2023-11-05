@@ -7,6 +7,7 @@ public class Flock : MonoBehaviour
 	public FlockAgent agentPrefab;
 	List<FlockAgent> agents = new List<FlockAgent>();
 	public FlockBehaviour behaviour;
+	public GameObject target;
 
 	[Range(10, 500)]
 	public int startingCount = 250;
@@ -56,7 +57,7 @@ public class Flock : MonoBehaviour
 
 			//for testing neighbour detections
 
-			Vector3 move = behaviour.CalculateMove(agent, context, this);
+			Vector3 move = behaviour.CalculateMove(agent, context, this, target);
 			//multiplying by drive factor to get speedier movement
 			move *= driveFactor;
 			if (move.sqrMagnitude > squareMaxSpeed)
