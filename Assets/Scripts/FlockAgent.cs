@@ -19,7 +19,7 @@ public class FlockAgent : MonoBehaviour
 		agentCollider = GetComponent<Collider>();
 	}
 
-	public void Move(Vector2 velocity)
+	public void Move(Vector3 velocity)
 	{
 		//turn agent to direction to move to
 

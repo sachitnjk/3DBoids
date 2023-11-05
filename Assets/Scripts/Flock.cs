@@ -55,7 +55,6 @@ public class Flock : MonoBehaviour
 			List<Transform> context = GetNearbyObjects(agent);
 
 			//for testing neighbour detections
-			//agent.GetComponentInChildren<SpriteRenderer>().color = Color.Lerp(Color.white, Color.red, context.Count / 6f);
 
 			Vector3 move = behaviour.CalculateMove(agent, context, this);
 			//multiplying by drive factor to get speedier movement
